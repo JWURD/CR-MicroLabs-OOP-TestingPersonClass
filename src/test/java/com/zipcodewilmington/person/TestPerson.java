@@ -95,4 +95,67 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void testSetHeadWare() {
+    Person person = new Person();
+    String expected = "hat";
+
+    person.setHeadWare(expected);
+    String actual = person.getHeadWare();
+
+    Assert.assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void testSetEyeWare() {
+        Person person = new Person();
+        String expected = "glasses";
+        person.setEyeWare(expected);
+        String actual = person.getEyeWare();
+
+        Assert.assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void setPhoneNumber() {
+        Person person = new Person();
+        String expected = "08080880980";
+        String actual = person.getPhoneNumber();
+
+        person.setPhoneNumber(expected);
+        Assert.assertEquals(expected, actual);
+
+
+    }
+
+    @Test
+    public void testSetSex() {
+        Person person = new Person();
+        String expected = "Male";
+        String actual = person.getSex();
+
+        person.setPhoneNumber(expected);
+        Assert.assertEquals(expected, actual);
+
+    }
+
+    @Test
+    public void testIsPerson() {
+        Person person = new Person();
+        boolean expected = true;
+        boolean actual = person.isPerson();
+
+
+        Assert.assertEquals(expected, actual);
+
+    }
+
+
+
+
+
+
 }
